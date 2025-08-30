@@ -22,19 +22,18 @@ public class LoginTest extends basePage {
 
     @AfterTest
     public void cleanUp() {
-        tearDown();
-        
+        tearDown();        
     }
 
     @Test(priority = 1,dataProvider = "configLoginData", dataProviderClass = LoginTestDataProvider.class)
     public void loginWithConfigCredentials(String username, String password) {
-        loginPage.performLoginPage(true, username, password);    
-        
-//        String actualError = loginPage.getErrorMessage();
-//        String expectedError = "Invalid credentials";
-//        Assert.assertEquals(actualError, expectedError, "Error message did not match!");
+        loginPage.performLoginPage(true, username, password);      
+
     }
     
+//  String actualError = loginPage.getErrorMessage();
+//  String expectedError = "Invalid credentials";
+//  Assert.assertEquals(actualError, expectedError, "Error message did not match!");
     
 }
 

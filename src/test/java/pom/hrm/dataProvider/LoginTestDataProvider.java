@@ -19,8 +19,8 @@ public class LoginTestDataProvider {
 	 @DataProvider( name = "configLoginData")
 	 public Object[][] configLoginData(){
 	
-		 String username = ConfigReader.getProperty("dummyusername");
-		 String password = ConfigReader.getProperty("dummypassword");
+		 String username = ConfigReader.getProperty("username");
+		 String password = ConfigReader.getProperty("password");
 		 
 		 return new Object[][]  {
 			 
