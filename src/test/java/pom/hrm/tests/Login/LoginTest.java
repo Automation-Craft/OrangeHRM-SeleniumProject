@@ -27,6 +27,9 @@ public class LoginTest extends basePage {
 
     @Test(priority = 1,dataProvider = "configLoginData", dataProviderClass = LoginTestDataProvider.class)
     public void loginWithConfigCredentials(String username, String password) {
+    	
+    	loginPage.verifyLoginPageLabels();
+    	
         loginPage.performLoginPage(true, username, password);      
 
     }
