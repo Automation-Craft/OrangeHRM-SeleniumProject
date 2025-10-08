@@ -1,4 +1,4 @@
-package pom.hrm.pages.dashboard.SideMenu;
+package pom.hrm.pages.Dashboard.SideMenu;
 
 import java.time.Duration;
 
