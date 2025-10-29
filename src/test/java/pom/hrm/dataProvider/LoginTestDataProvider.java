@@ -6,11 +6,11 @@ import pom.hrm.utils.ConfigReader;
 
 public class LoginTestDataProvider {
 
-	 @DataProvider(name = "validLoginData")
+	 @DataProvider(name = "inValidLoginData")
 	    public Object[][] validLoginData() {
 	        return new Object[][] {
-	            {"Admin", "admin123"},
-	            {"TestUser", "testpass"}
+	            {"Admin", "admin"},
+	            {"Password", "Wrong@1234"}
 	        };
 	    }
 	 
