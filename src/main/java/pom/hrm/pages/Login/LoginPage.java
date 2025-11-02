@@ -2,13 +2,13 @@ package pom.hrm.pages.Login;
 
 import java.time.Duration;
 
-import org.apache.hc.core5.util.Asserts;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
+
 import utilities.WaitUtils;
 
 public class LoginPage {
@@ -80,6 +80,23 @@ public class LoginPage {
 
 		WaitUtils waitUtils = new WaitUtils(driver);
 		waitUtils.waitForVisibility(loginPanelTitle);
+		
+    	//Hard Assert example
+    	
+    	Assert.assertEquals(driver.findElement(loginPanelTitle).getText(), "Login", "❌ Title not verified");
+    	
+    	//Soft Assert example
+    	
+//    	SoftAssert softAssert = new SoftAssert();
+//    	
+//    	softAssert.assertEquals(driver.findElement(loginPanelTitle).getText(), "Login", "❌ Login Label not verified");
+//    	softAssert.assertEquals(driver.findElement(usernameLabel).getText(), "Username", "❌ Username Label not verified");
+//    	softAssert.assertEquals(driver.findElement(passwordLabel).getText(), "Password", "❌ Password label not verified");
+//    	softAssert.assertEquals(driver.findElement(forgetPasswordLabel).getText(), "Forgot your password? ", "❌ Forgot your password?");
+//    	
+//    	softAssert.assertAll(); // to report all failures together.
+		
+		
 		SoftAssert softAssert = new SoftAssert();
 
 		// Hard Assert example

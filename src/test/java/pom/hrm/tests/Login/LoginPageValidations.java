@@ -7,7 +7,6 @@ import org.testng.annotations.Test;
 import pom.hrm.base.basePage;
 import pom.hrm.dataProvider.LoginTestDataProvider;
 import pom.hrm.pages.Login.LoginPage;
-import pom.hrm.pages.Dashboard.SideMenu.SideMenu;
 import pom.hrm.utils.ConfigReader;
 
 public class LoginPageValidations extends basePage{

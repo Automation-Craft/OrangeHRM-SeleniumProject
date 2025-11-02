@@ -1,4 +1,4 @@
-package pom.hrm.pages.Dashboard.SideMenu;
+package pom.hrm.pages.dashboard.SideMenu;
 
 import java.time.Duration;
 
@@ -26,7 +26,7 @@ public class SideMenu {
 	By optionRecruitment = By.xpath("//span[text()='Recruitment']");
 	By optionMyInfo = By.xpath("//span[text()='My Info']");
 	By dashboardTitle = By.xpath("//h6[text()='Dashboard']");
-	
+		
 	//Action
 	public void clickOptionAdmin() {
 		driver.findElement(optionAdmin).click();

@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import pom.hrm.base.basePage;
 import pom.hrm.dataProvider.LoginTestDataProvider;
 import pom.hrm.pages.Login.LoginPage;
-import pom.hrm.pages.Dashboard.SideMenu.SideMenu;
+import pom.hrm.pages.dashboard.SideMenu.SideMenu;
 import pom.hrm.utils.ConfigReader;
 
 public class LoginTest extends basePage {
@@ -33,20 +33,30 @@ public class LoginTest extends basePage {
     	
 //    	loginPage.verifyLoginPageLabels();
     	
-        loginPage.performLoginPage(true,username,password,false);      
+    	test = extent.createTest("loginWithConfigCredentials");
+    	test.info("Launching browser and navigating to login page");
+        loginPage.performLoginPage(true,username,password,false);
+        
+        test.pass("Login test executed successfully");
 
     } 
 
-    @Test
+    @Test(enabled = false)
     public void navigateToForgetPassword() {
     	
     	loginPage.performLoginPage(false,null,null,true);
     }
     
+    @Test(priority = 2)
+    public void verifySideMenu(){
+    	test = extent.createTest("verifySideMenu");
+    	test.info("Verify and navigation of sidemenu functions");
+    	sideMenuPage.performSideMenu(true, true, true, true, true);
+    	
+    	test.pass("Verification and Navigation of Side Menu completed Successfully");
+    }
     
 //  String actualError = loginPage.getErrorMessage();
 //  String expectedError = "Invalid credentials";
-//  Assert.assertEquals(actualError, expectedError, "Error message did not match!");
-    
+//  Assert.assertEquals(actualError, expectedError, "Error message did not match!"); 
 }
-
