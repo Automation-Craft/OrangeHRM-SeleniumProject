@@ -42,7 +42,7 @@ public class LoginPage {
     By forgetPassword = By.linkText("Forgot your password?");
 	
 	
-	// Actions
+	// Page Methods
 	public void performLoginPage(
 			boolean isLogin, 
 			String username,
