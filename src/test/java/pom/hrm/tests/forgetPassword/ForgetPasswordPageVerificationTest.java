@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import pom.hrm.base.basePage;
 import pom.hrm.pages.forgetPassword.ResetPasswordPage;
 
-public class ForgetPasswordPageVerifications extends basePage {
+public class ForgetPasswordPageVerificationTest extends basePage {
 
 	private ResetPasswordPage resetPasswordPage;
 

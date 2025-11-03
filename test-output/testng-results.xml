@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-27T22:09:49 IST" name="Default suite" finished-at="2025-10-27T22:10:16 IST" duration-ms="27053">
+  <suite started-at="2025-11-03T22:08:55 IST" name="PreLoginValidationSuite" finished-at="2025-11-03T22:09:20 IST" duration-ms="24673">
     <groups>
     </groups>
-    <test started-at="2025-10-27T22:09:49 IST" name="Default test" finished-at="2025-10-27T22:10:16 IST" duration-ms="27053">
-      <class name="pom.hrm.tests.Login.LoginPageValidations">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:pom.hrm.tests.Login.LoginPageValidations@d21a74c]" started-at="2025-10-27T22:09:49 IST" name="setUp" finished-at="2025-10-27T22:10:10 IST" duration-ms="21198" status="PASS">
+    <test started-at="2025-11-03T22:08:55 IST" name="PreLoginValidationTest" finished-at="2025-11-03T22:09:20 IST" duration-ms="24673">
+      <class name="pom.hrm.tests.Login.LoginPageValidationTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pom.hrm.tests.Login.LoginPageValidationTest@6db9f5a4]" started-at="2025-11-03T22:08:55 IST" name="setUp" finished-at="2025-11-03T22:09:16 IST" duration-ms="20374" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:pom.hrm.tests.Login.LoginPageValidations@d21a74c]" started-at="2025-10-27T22:10:10 IST" name="loginWithInvalidCredentials" data-provider="inValidLoginData" finished-at="2025-10-27T22:10:14 IST" duration-ms="3651" status="PASS">
+        <test-method signature="verifyLoginPageValidations(java.lang.String,java.lang.String)[pri:1, instance:pom.hrm.tests.Login.LoginPageValidationTest@6db9f5a4]" started-at="2025-11-03T22:09:16 IST" name="verifyLoginPageValidations" data-provider="inValidLoginData" finished-at="2025-11-03T22:09:18 IST" duration-ms="2537" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,8 +26,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithInvalidCredentials -->
-        <test-method signature="loginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:pom.hrm.tests.Login.LoginPageValidations@d21a74c]" started-at="2025-10-27T22:10:14 IST" name="loginWithInvalidCredentials" data-provider="inValidLoginData" finished-at="2025-10-27T22:10:15 IST" duration-ms="1741" status="PASS">
+        </test-method> <!-- verifyLoginPageValidations -->
+        <test-method signature="verifyLoginPageValidations(java.lang.String,java.lang.String)[pri:1, instance:pom.hrm.tests.Login.LoginPageValidationTest@6db9f5a4]" started-at="2025-11-03T22:09:18 IST" name="verifyLoginPageValidations" data-provider="inValidLoginData" finished-at="2025-11-03T22:09:20 IST" duration-ms="1484" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -42,12 +42,12 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithInvalidCredentials -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:pom.hrm.tests.Login.LoginPageValidations@d21a74c]" started-at="2025-10-27T22:10:15 IST" name="cleanUp" finished-at="2025-10-27T22:10:16 IST" duration-ms="364" status="PASS">
+        </test-method> <!-- verifyLoginPageValidations -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:pom.hrm.tests.Login.LoginPageValidationTest@6db9f5a4]" started-at="2025-11-03T22:09:20 IST" name="cleanUp" finished-at="2025-11-03T22:09:20 IST" duration-ms="199" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-      </class> <!-- pom.hrm.tests.Login.LoginPageValidations -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- pom.hrm.tests.Login.LoginPageValidationTest -->
+    </test> <!-- PreLoginValidationTest -->
+  </suite> <!-- PreLoginValidationSuite -->
 </testng-results>

@@ -10,7 +10,7 @@ import pom.hrm.pages.Login.LoginPage;
 import pom.hrm.pages.Dashboard.SideMenu.SideMenu;
 import pom.hrm.utils.ConfigReader;
 
-public class LoginPageValidations extends basePage{
+public class LoginPageValidationTest extends basePage{
 
 
     private LoginPage loginPage;

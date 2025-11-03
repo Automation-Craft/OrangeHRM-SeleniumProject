@@ -20,7 +20,7 @@ public class ResetPasswordPage extends basePage {
 
 	// this.driver → refers to your class variable (declared at the top of the
 	// class)
-	// constructor & class name should be
+	// constructor method name should be same as class name
 
 	// Constructor
 
