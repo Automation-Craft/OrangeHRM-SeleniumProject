@@ -3,13 +3,17 @@
 <suite name="Failed suite [PreLoginValidationSuite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="PreLoginValidationTest(failed)">
     <classes>
-      <class name="pom.hrm.tests.Login.LoginPageValidationTest">
+      <class name="pom.hrm.tests.forgetPassword.ForgetPasswordPageVerificationTest">
         <methods>
+          <include name="verifyResetPasswordLandingPagelabels"/>
           <include name="setUp"/>
-          <include name="verifyLoginPageValidations" invocation-numbers="0 1"/>
+          <include name="verifyWithNewUsername"/>
           <include name="cleanUp"/>
+          <include name="tearDownReport"/>
+          <include name="setupReport"/>
+          <include name="navigateToForgetPassword"/>
         </methods>
-      </class> <!-- pom.hrm.tests.Login.LoginPageValidationTest -->
+      </class> <!-- pom.hrm.tests.forgetPassword.ForgetPasswordPageVerificationTest -->
     </classes>
   </test> <!-- PreLoginValidationTest(failed) -->
 </suite> <!-- Failed suite [PreLoginValidationSuite] -->

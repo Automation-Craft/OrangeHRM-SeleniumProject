@@ -35,7 +35,7 @@ public class ResetPasswordPage extends basePage {
 			.xpath("//p[text()='Please enter your username to identify your account to reset your password']");
 	By usernamelabel = By.xpath("//label[text()=\"Username\"]");
 	By inputUsername = By.name("username");
-	By resetPasswordButton = By.name("//button[text()=\" Reset Password \"]");
+	By resetPasswordButton = By.xpath("//button[text()=' Reset Password ']");	
 	By resetPasswordLinkLabel = By.xpath("//h6[text() = \"Reset Password link sent successfully\"]");
 	By aResetPasswordLinkLabel = By.xpath("//p[text()='A reset password link has been sent to you via email.']");
 	By youCanFollowLabel = By.xpath("//p[text()='You can follow that link and select a new password.']");
@@ -54,7 +54,7 @@ public class ResetPasswordPage extends basePage {
 	public void verifyResetPasswordPageLabels(boolean isBeforeResetPage, boolean isAfterResetRequest) {
 
 		if (isBeforeResetPage) {
-			Assert.assertEquals(driver.findElement(resetPasswordlabel).getText(), "Reset Password",
+			Assert.assertEquals(driver.findElement(resetPasswordlabel).getText().trim(), "Reset Password",
 					"❌ Text not matching");
 			Assert.assertEquals(driver.findElement(subTitlelabel).getText(),
 					"Please enter your username to identify your account to reset your password",

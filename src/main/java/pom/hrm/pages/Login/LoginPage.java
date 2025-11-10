@@ -60,7 +60,8 @@ public class LoginPage {
 			clickLoginButton();
 		}
 		if(isforgetPassword) {
-			
+			WaitUtils waitUtilss = new WaitUtils(driver);
+			waitUtilss.waitForVisiblity(forgetPassword);
 			clickForgetPassword();
 		}
 

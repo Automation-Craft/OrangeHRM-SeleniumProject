@@ -9,11 +9,63 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">PreLoginValidationSuite</th></tr>
-<tr><td><a href="#t0">PreLoginValidationTest</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">24,673</td><td></td><td></td></tr>
+<tr><td><a href="#t0">PreLoginValidationTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">28,069</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">PreLoginValidationSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">PreLoginValidationTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">pom.hrm.tests.Login.LoginPageValidationTest</td><td><a href="#m0">verifyLoginPageValidations</a></td><td rowspan="2">1762187956287</td><td rowspan="2">2537</td></tr><tr class="passedeven"><td><a href="#m1">verifyLoginPageValidations</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">PreLoginValidationSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">PreLoginValidationTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">pom.hrm.tests.forgetPassword.ForgetPasswordPageVerificationTest</td><td><a href="#m0">navigateToForgetPassword</a></td><td rowspan="1">1762443725700</td><td rowspan="1">15</td></tr><tr class="failedeven"><td><a href="#m1">verifyResetPasswordLandingPagelabels</a></td><td rowspan="1">1762443725724</td><td rowspan="1">10046</td></tr><tr class="failedeven"><td><a href="#m2">verifyWithNewUsername</a></td><td rowspan="1">1762443735770</td><td rowspan="1">10122</td></tr><tr><th colspan="4">PreLoginValidationTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">pom.hrm.tests.forgetPassword.ForgetPasswordPageVerificationTest</td><td><a href="#m3">verifyResetPasswordsuccessRequestPagelabels</a></td><td rowspan="1">1762443745895</td><td rowspan="1">1</td></tr></tbody>
 </table>
-<h2>PreLoginValidationTest</h2><h3 id="m0">pom.hrm.tests.Login.LoginPageValidationTest#verifyLoginPageValidations</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Admin</td><td>admin</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">pom.hrm.tests.Login.LoginPageValidationTest#verifyLoginPageValidations</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Password</td><td>Wrong@1234</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>PreLoginValidationTest</h2><h3 id="m0">pom.hrm.tests.forgetPassword.ForgetPasswordPageVerificationTest#navigateToForgetPassword</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;pom.hrm.pages.Login.LoginPage.performLoginPage(boolean, String, String, boolean)&quot; because &quot;this.loginPage&quot; is null
+	at pom.hrm.tests.forgetPassword.ForgetPasswordPageVerificationTest.navigateToForgetPassword(ForgetPasswordPageVerificationTest.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">pom.hrm.tests.forgetPassword.ForgetPasswordPageVerificationTest#verifyResetPasswordLandingPagelabels</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[text()= &quot;Reset Password&quot;]&quot;}
+  (Session info: chrome=141.0.7390.123)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [49a9eeffe07fa27a591d1ddee3faafd0, findElement {using=xpath, value=//h6[text()= &quot;Reset Password&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\Athira\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51477}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51477/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 49a9eeffe07fa27a591d1ddee3faafd0
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at pom.hrm.pages.forgetPassword.ResetPasswordPage.verifyResetPasswordPageLabels(ResetPasswordPage.java:57)
+	at pom.hrm.tests.forgetPassword.ForgetPasswordPageVerificationTest.verifyResetPasswordLandingPagelabels(ForgetPasswordPageVerificationTest.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">pom.hrm.tests.forgetPassword.ForgetPasswordPageVerificationTest#verifyWithNewUsername</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos; Reset Password &apos;]&quot;}
+  (Session info: chrome=141.0.7390.123)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [49a9eeffe07fa27a591d1ddee3faafd0, findElement {using=xpath, value=//button[text()=&apos; Reset Password &apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\Athira\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51477}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51477/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 49a9eeffe07fa27a591d1ddee3faafd0
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at pom.hrm.pages.forgetPassword.ResetPasswordPage.clickresetPasswordButton(ResetPasswordPage.java:95)
+	at pom.hrm.pages.forgetPassword.ResetPasswordPage.performresetPassword(ResetPasswordPage.java:50)
+	at pom.hrm.tests.forgetPassword.ForgetPasswordPageVerificationTest.verifyWithNewUsername(ForgetPasswordPageVerificationTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">pom.hrm.tests.forgetPassword.ForgetPasswordPageVerificationTest#verifyResetPasswordsuccessRequestPagelabels</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
