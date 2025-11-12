@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-PreLoginValidationSuite" class="navigator-link">
-              <span class="suite-name border-failed">PreLoginValidationSuite</span>
+              <span class="suite-name border-passed">PreLoginValidationSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-PreLoginValidationSuite" class="navigator-link ">
-                    <span>C:\Project\Automation\OrangeHRM-SeleniumProject\src\test\java\resources\002-Forget Password\ResetPasswordValidations.xml</span>
+                    <span>C:\Project\Automation\OrangeHRM-SeleniumProject\src\test\java\TestSuites\002-Forget Password\ResetPasswordValidations.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,31 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 3 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-PreLoginValidationSuite" class="hide-methods failed suite-PreLoginValidationSuite"> (hide)</a> <!-- hide-methods failed suite-PreLoginValidationSuite -->
-                      <a href="#" panel-name="suite-PreLoginValidationSuite" class="show-methods failed suite-PreLoginValidationSuite"> (show)</a> <!-- show-methods failed suite-PreLoginValidationSuite -->
-                    </span>
-                    <div class="method-list-content failed suite-PreLoginValidationSuite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-PreLoginValidationSuite" title="pom.hrm.tests.forgetPassword.ForgetPasswordPageVerificationTest" class="method navigator-link" hash-for-method="navigateToForgetPassword">navigateToForgetPassword</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-PreLoginValidationSuite" title="pom.hrm.tests.forgetPassword.ForgetPasswordPageVerificationTest" class="method navigator-link" hash-for-method="verifyResetPasswordLandingPagelabels">verifyResetPasswordLandingPagelabels</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-PreLoginValidationSuite" title="pom.hrm.tests.forgetPassword.ForgetPasswordPageVerificationTest" class="method navigator-link" hash-for-method="verifyWithNewUsername">verifyWithNewUsername</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-PreLoginValidationSuite -->
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -127,7 +103,22 @@
                     <div class="method-list-content passed suite-PreLoginValidationSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PreLoginValidationSuite" title="pom.hrm.tests.forgetPassword.ForgetPasswordPageVerificationTest" class="method navigator-link" hash-for-method="navigateToForgetPassword">navigateToForgetPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PreLoginValidationSuite" title="pom.hrm.tests.forgetPassword.ForgetPasswordPageVerificationTest" class="method navigator-link" hash-for-method="verifyResetPasswordLandingPagelabels">verifyResetPasswordLandingPagelabels</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-PreLoginValidationSuite" title="pom.hrm.tests.forgetPassword.ForgetPasswordPageVerificationTest" class="method navigator-link" hash-for-method="verifyResetPasswordsuccessRequestPagelabels">verifyResetPasswordsuccessRequestPagelabels</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PreLoginValidationSuite" title="pom.hrm.tests.forgetPassword.ForgetPasswordPageVerificationTest" class="method navigator-link" hash-for-method="verifyWithNewUsername">verifyWithNewUsername</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-PreLoginValidationSuite -->
@@ -142,91 +133,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-PreLoginValidationSuite" class="panel PreLoginValidationSuite">
-          <div class="suite-PreLoginValidationSuite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">pom.hrm.tests.forgetPassword.ForgetPasswordPageVerificationTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="navigateToForgetPassword">
-                  </a> <!-- navigateToForgetPassword -->
-                  <span class="method-name">navigateToForgetPassword</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;pom.hrm.pages.Login.LoginPage.performLoginPage(boolean, String, String, boolean)&quot; because &quot;this.loginPage&quot; is null
-	at pom.hrm.tests.forgetPassword.ForgetPasswordPageVerificationTest.navigateToForgetPassword(ForgetPasswordPageVerificationTest.java:31)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyResetPasswordLandingPagelabels">
-                  </a> <!-- verifyResetPasswordLandingPagelabels -->
-                  <span class="method-name">verifyResetPasswordLandingPagelabels</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[text()= &quot;Reset Password&quot;]&quot;}
-  (Session info: chrome=141.0.7390.123)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [49a9eeffe07fa27a591d1ddee3faafd0, findElement {using=xpath, value=//h6[text()= &quot;Reset Password&quot;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\Athira\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51477}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51477/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 49a9eeffe07fa27a591d1ddee3faafd0
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at pom.hrm.pages.forgetPassword.ResetPasswordPage.verifyResetPasswordPageLabels(ResetPasswordPage.java:57)
-	at pom.hrm.tests.forgetPassword.ForgetPasswordPageVerificationTest.verifyResetPasswordLandingPagelabels(ForgetPasswordPageVerificationTest.java:38)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyWithNewUsername">
-                  </a> <!-- verifyWithNewUsername -->
-                  <span class="method-name">verifyWithNewUsername</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos; Reset Password &apos;]&quot;}
-  (Session info: chrome=141.0.7390.123)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [49a9eeffe07fa27a591d1ddee3faafd0, findElement {using=xpath, value=//button[text()=&apos; Reset Password &apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\Athira\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51477}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51477/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 49a9eeffe07fa27a591d1ddee3faafd0
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at pom.hrm.pages.forgetPassword.ResetPasswordPage.clickresetPasswordButton(ResetPasswordPage.java:95)
-	at pom.hrm.pages.forgetPassword.ResetPasswordPage.performresetPassword(ResetPasswordPage.java:50)
-	at pom.hrm.tests.forgetPassword.ForgetPasswordPageVerificationTest.verifyWithNewUsername(ForgetPasswordPageVerificationTest.java:45)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-PreLoginValidationSuite-class-failed -->
           <div class="suite-PreLoginValidationSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -235,9 +141,30 @@ Session ID: 49a9eeffe07fa27a591d1ddee3faafd0
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="navigateToForgetPassword">
+                  </a> <!-- navigateToForgetPassword -->
+                  <span class="method-name">navigateToForgetPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyResetPasswordLandingPagelabels">
+                  </a> <!-- verifyResetPasswordLandingPagelabels -->
+                  <span class="method-name">verifyResetPasswordLandingPagelabels</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="verifyResetPasswordsuccessRequestPagelabels">
                   </a> <!-- verifyResetPasswordsuccessRequestPagelabels -->
                   <span class="method-name">verifyResetPasswordsuccessRequestPagelabels</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyWithNewUsername">
+                  </a> <!-- verifyWithNewUsername -->
+                  <span class="method-name">verifyWithNewUsername</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -245,13 +172,16 @@ Session ID: 49a9eeffe07fa27a591d1ddee3faafd0
         </div> <!-- panel PreLoginValidationSuite -->
         <div panel-name="test-xml-PreLoginValidationSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Project\Automation\OrangeHRM-SeleniumProject\src\test\java\resources\002-Forget Password\ResetPasswordValidations.xml</span>
+            <span class="header-content">C:\Project\Automation\OrangeHRM-SeleniumProject\src\test\java\TestSuites\002-Forget Password\ResetPasswordValidations.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;PreLoginValidationSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utilities.ExtentTestListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;PreLoginValidationTest&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;pom.hrm.tests.forgetPassword.ForgetPasswordPageVerificationTest&quot;/&gt;
@@ -296,17 +226,17 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyWithNewUsername')
+data.setCell(0, 1, 'navigateToForgetPassword')
 data.setCell(0, 2, 'pom.hrm.tests.forgetPassword.ForgetPasswordPageVerificationTest')
-data.setCell(0, 3, 10122);
+data.setCell(0, 3, 1446);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyResetPasswordLandingPagelabels')
 data.setCell(1, 2, 'pom.hrm.tests.forgetPassword.ForgetPasswordPageVerificationTest')
-data.setCell(1, 3, 10046);
+data.setCell(1, 3, 433);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'navigateToForgetPassword')
+data.setCell(2, 1, 'verifyWithNewUsername')
 data.setCell(2, 2, 'pom.hrm.tests.forgetPassword.ForgetPasswordPageVerificationTest')
-data.setCell(2, 3, 15);
+data.setCell(2, 3, 147);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyResetPasswordsuccessRequestPagelabels')
 data.setCell(3, 2, 'pom.hrm.tests.forgetPassword.ForgetPasswordPageVerificationTest')
@@ -315,7 +245,7 @@ window.suiteTableData['PreLoginValidationSuite']= { tableData: data, tableDiv: '
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-PreLoginValidationSuite">
               </div> <!-- times-div-PreLoginValidationSuite -->
             </div> <!-- times-div -->
@@ -342,43 +272,35 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">pom.hrm.tests.forgetPassword.ForgetPasswordPageVerificationTest</div> <!-- chronological-class-name -->
-              <div class="configuration-suite before">
-                <span class="method-name">setupReport</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">335 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">navigateToForgetPassword</span>
-                <span class="method-start">7972 ms</span>
+                <span class="method-start">5795 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifyResetPasswordLandingPagelabels</span>
-                <span class="method-start">7996 ms</span>
+                <span class="method-start">7248 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifyWithNewUsername</span>
-                <span class="method-start">18042 ms</span>
+                <span class="method-start">7681 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyResetPasswordsuccessRequestPagelabels</span>
-                <span class="method-start">28167 ms</span>
+                <span class="method-start">7831 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">cleanUp</span>
-                <span class="method-start">28172 ms</span>
+                <span class="method-start">7835 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">tearDownReport</span>
-                <span class="method-start">28442 ms</span>
+                <span class="method-start">8376 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

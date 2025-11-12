@@ -18,6 +18,7 @@ public class ForgetPasswordPageVerificationTest extends basePage {
 	public void setUp() {
 		initializeBrowser(ConfigReader.getProperty("browser")); // loads config inside PageBase
 		resetPasswordPage = new ResetPasswordPage(getDriver());
+		loginPage = new LoginPage(getDriver());   
 	}
 
 	@AfterTest
@@ -25,7 +26,7 @@ public class ForgetPasswordPageVerificationTest extends basePage {
 		tearDown();
 	}
 
-	@Test(priority = 1)
+	@Test(priority = -1)
 	public void navigateToForgetPassword() {
 		System.out.println("Click on Forget password button");
 		loginPage.performLoginPage(false, null, null, true);

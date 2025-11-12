@@ -39,17 +39,22 @@ public class LoginPage {
 	By passwordRequiredLabel = By
 			.xpath("//input[@name='password']/ancestor::div/following-sibling::span[text()='Required']");
 	By incorrectCredentials = By.xpath("//p[contains(normalize-space(),'Invalid credentials')]");
-    By forgetPassword = By.linkText("Forgot your password?");
-	
-	
+	By forgetPassword = By.xpath("//p[contains(@class,'orangehrm-login-forgot-header')]");
+
+
 	// Page Methods
-	public void performLoginPage(
-			boolean isLogin, 
-			String username,
-			String password,
-			boolean isforgetPassword) { // maintaining code, by calling
-																						// single line we can minimize
-																						// the lengthy codes
+	public void performLoginPage(boolean isLogin, String username, String password, boolean isforgetPassword) { // maintaining
+																												// code,
+																												// by
+																												// calling
+																												// single
+																												// line
+																												// we
+																												// can
+																												// minimize
+																												// the
+																												// lengthy
+																												// codes
 
 		if (isLogin) {
 			WaitUtils waitUtils = new WaitUtils(driver);
@@ -59,9 +64,7 @@ public class LoginPage {
 			enterPassword(password);
 			clickLoginButton();
 		}
-		if(isforgetPassword) {
-			WaitUtils waitUtilss = new WaitUtils(driver);
-			waitUtilss.waitForVisiblity(forgetPassword);
+		if (isforgetPassword) {
 			clickForgetPassword();
 		}
 
@@ -81,13 +84,13 @@ public class LoginPage {
 
 		WaitUtils waitUtils = new WaitUtils(driver);
 		waitUtils.waitForVisibility(loginPanelTitle);
-		
-    	//Hard Assert example
-    	
-    	Assert.assertEquals(driver.findElement(loginPanelTitle).getText(), "Login", "❌ Title not verified");
-    	
-    	//Soft Assert example
-    	
+
+		// Hard Assert example
+
+		Assert.assertEquals(driver.findElement(loginPanelTitle).getText(), "Login", "❌ Title not verified");
+
+		// Soft Assert example
+
 //    	SoftAssert softAssert = new SoftAssert();
 //    	
 //    	softAssert.assertEquals(driver.findElement(loginPanelTitle).getText(), "Login", "❌ Login Label not verified");
@@ -96,8 +99,7 @@ public class LoginPage {
 //    	softAssert.assertEquals(driver.findElement(forgetPasswordLabel).getText(), "Forgot your password? ", "❌ Forgot your password?");
 //    	
 //    	softAssert.assertAll(); // to report all failures together.
-		
-		
+
 		SoftAssert softAssert = new SoftAssert();
 
 		// Hard Assert example
@@ -133,8 +135,8 @@ public class LoginPage {
 		if (isNegativeVerification) {
 
 			clickLoginButton();
-			
-			//soft assert
+
+			// soft assert
 			String usernameRequiredValidation = driver.findElement(usernameRequiredLabel).getText();
 			softAssert.assertEquals(usernameRequiredValidation.trim(), "Required",
 					"❌ Username Mandatory Validation mismatch");
@@ -169,8 +171,13 @@ public class LoginPage {
 	public String getLoginTitle() {
 		return driver.findElement(loginPanelTitle).getText();
 	}
-	public void clickForgetPassword() {
-		driver.findElement(forgetPassword).click();
-	}
 
+	public void clickForgetPassword() {
+
+//		wait.until(ExpectedConditions.elementToBeClickable(forgetPassword));
+//		driver.findElement(forgetPassword).click();\
+
+		WaitUtils.safeClick(driver, forgetPassword);
+
+	}
 }
